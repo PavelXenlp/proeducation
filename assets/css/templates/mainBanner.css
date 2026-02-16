@@ -1,0 +1,370 @@
+.mainBanner {
+    background: url(/clients/proeducation//wp-content/themes/custom_theme/assets/img/desktop-main-banner.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.mainBannerContent {
+    max-width: 50%;
+}
+
+.mainBannerContent h1 {
+    text-transform: uppercase;
+    font-size: 76px;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.8);
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.mainBannerContent h1 span {
+    color: #006499;
+}
+
+.mainBannerContent p {
+    margin: 0;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.mainBannerForm {
+    margin: 0 50px;
+    margin-top: -140px;
+    margin-bottom: 80px;
+}
+
+.mainBannerFormTabs {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(50px);
+    border-radius: 60px;
+    width: fit-content;
+    padding: 5px;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.mainBannerFormTabItem {
+    font-size: 18px;
+    padding: 20px 60px;
+    border-radius: 50px;
+    transition: all 0.3s;
+    background: transparent;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.mainBannerFormTabItem.active,
+.mainBannerFormTabItem:hover {
+    color: #fff;
+    background: rgba(0, 100, 153, 0.7);
+    backdrop-filter: blur(50px);
+}
+
+.mainBannerFormContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px 35px 45px;
+    gap: 25px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(30px);
+    border-radius: 20px;
+}
+
+.mainBannerFormContentRow {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.mainBannerFormContentRow .mainBannerFormContentRowItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.mainBannerFormContentRow .mainBannerFormContentRowItem .icon {
+    width: 80px;
+    height: 80px;
+}
+
+.mainBannerFormContentRow .mainBannerFormContentRowItem .icon img {
+    width: 100%;
+}
+
+.mainBannerFormContentRow .mainBannerFormContentRowItem .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 5px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.mainBannerFormContentRow .mainBannerFormContentRowItem .content .heading {
+    font-size: 34px;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.mainBannerFormContentRow .separate {
+    margin: 0 auto;
+    height: 80px;
+    width: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.mainBannerFormBottomRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.mainBannerFormBottomRow p {
+    max-width: 60%;
+}
+
+.mainBannerFormContentSearch {
+    position: relative;
+    width: 100%;
+}
+
+.mainBannerFormContentSearch .searchIcon {
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    translate: 0 -50%;
+}
+
+.mainBannerFormContentSearch input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 25px;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    border: 0;
+    outline: 0;
+}
+
+.collegeInfo,
+.bachelorInfo,
+.masterInfo {
+    display: none;
+}
+
+.collegeInfo.active,
+.bachelorInfo.active,
+.masterInfo.active {
+    display: block;
+}
+
+.fadeIn {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Анимация для исчезновения */
+.fadeOut {
+    animation: fadeOut 0.3s ease forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(10px);
+        display: none;
+    }
+}
+
+.mobileMainImage {
+    display: none;
+}
+
+@media(max-width: 1100px) {
+    .mainBannerFormContentRow {
+        flex-direction: unset;
+        flex-wrap: wrap;
+    }
+
+    .mainBannerFormContentRow .separate {
+        display: none;
+    }
+}
+
+@media(max-width: 700px) {
+    .mainCertsBlockSlider {
+        display: none;
+    }
+
+    .mainBannerFormContentRow .mainBannerFormContentRowItem .content .heading {
+        font-size: 24px;
+    }
+
+    .mainBannerFormContentRow .mainBannerFormContentRowItem .icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .mainBanner {
+        padding-left: 10px;
+        padding-right: 10px;
+        background: linear-gradient(191.4deg, #DCEDEC -0.83%, #B6D2D5 100%);
+        border-radius: 0px 0px 30px 30px;
+        height: 840px;
+        flex-direction: column;
+    }
+
+    .mobileMainImage {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .mobileMainImage img {
+        width: 80%;
+    }
+
+    .mainBannerForm {
+        margin: 0 10px;
+        margin-bottom: 40px;
+        margin-top: -200px;
+    }
+
+    .mainBannerContent {
+        margin-top: 120px;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mainBannerContent h1 {
+        font-size: 42px;
+        text-align: center;
+    }
+
+    .mainBannerContent p {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .mainBannerFormTabItem {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    .mainBannerFormBottomRow {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .mainBannerFormBottomRow p {
+        max-width: 100%;
+        font-size: 14px;
+    }
+
+    .mainBannerFormContent {
+        padding: 20px;
+    }
+
+    .mainBannerFormBottomRow .link {
+        width: 100%;
+        justify-content: center;
+        border: 1px solid #006499;
+        background: #fff;
+        padding: 18px;
+        border-radius: 40px;
+        box-sizing: border-box;
+    }
+
+    .mainBannerFormContentSearch input {
+        padding: 25px 20px;
+    }
+
+    .mainBannerFormContentSearch .searchIcon {
+        right: 15px;
+    }
+
+    .mainBannerFormContentRow .mainBannerFormContentRowItem .content .text {
+        font-size: 14px;
+    }
+
+    .mainBannerFormTabs {
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width: 500px) {
+    .mainBannerFormContentRow {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .mainBannerFormBottomRow p {
+        text-align: left;
+    }
+
+    .mainBannerFormContentRow .mainBannerFormContentRowItem {
+        display: grid;
+        grid-template-columns: 0fr 1fr;
+    }
+
+    .mainBannerFormTabItem {
+        padding: 13px;
+    }
+
+    .mainBannerFormContentSearch input {
+        padding-right: 45px;
+    }
+}

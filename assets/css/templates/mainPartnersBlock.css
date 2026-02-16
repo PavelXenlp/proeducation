@@ -1,0 +1,97 @@
+.mainPartnersBlock {
+    margin-bottom: 120px;
+}
+
+.mainPartnersBlock h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.mainPartnersBlock .block-mainPartnersBlock {
+    width: 100%;
+}
+
+.mainPartnersBlock .swiper-wrapper {
+    align-items: stretch;
+}
+
+.mainPartnersBlock .swiper-slide {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px 20px 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.mainPartnersBlock .swiper-slide>img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.mainPartnersBlock .swiper-slide .text {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.mainPartnersBlock .swiper-slide .text a {
+    display: flex;
+    align-items: center;
+    text-decoration: underline;
+    gap: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.6);
+    white-space: nowrap;
+}
+
+.mainPartnersBlock .swiper-slide .text a img {
+    width: auto;
+    height: auto;
+    max-width: none;
+    max-height: none;
+    object-fit: initial;
+}
+
+.mainPartnersBlock .swiper-wrapper {
+    height: fit-content;
+}
+
+@media screen and (max-width: 500px) {
+    .mainPartnersBlock {
+        padding: 0 10px;
+        margin-bottom: 80px;
+    }
+
+    .mainPartnersBlock h2 {
+        font-size: 28px;
+        padding-bottom: 15px;
+    }
+
+    .mainPartnersBlock .block-mainPartnersBlock .swiper-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .mainPartnersBlock .block-mainPartnersBlock .swiper-wrapper .swiper-slide {
+        width: 100% !important;
+        height: 100%;
+        padding: 20px 51px !important;
+        gap: 17px !important;
+    }
+
+    .mainPartnersBlock .block-mainPartnersBlock .swiper-wrapper .swiper-slide .text a {
+        font-size: 14px !important;
+    }
+}

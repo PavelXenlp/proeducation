@@ -1,0 +1,196 @@
+.mainReviews {
+    margin-bottom: 120px;
+}
+
+.mainReviews .text-mainReviews {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.mainReviews .text-mainReviews h2 {
+    font-size: 48px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.mainReviews .text-mainReviews .links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.mainReviews .swiper-reviews .swiper {
+    margin-bottom: 30px;
+    padding-left: 50px;
+}
+
+.mainReviews .swiper-reviews .swiper .swiper-wrapper {
+    height: fit-content;
+}
+
+.mainReviews .swiper-reviews .swiper-slide {
+    height: auto !important;
+}
+
+.mainReviews .block-reviews {
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    height: 100%;
+    flex-shrink: 0;
+}
+
+.allReviewsBlock .block-reviews {
+    height: auto;
+}
+
+.allReviewsBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mainReviews .block-reviews .review-title {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 17px;
+}
+
+.mainReviews .block-reviews .review-title .text h3 {
+    font-size: 24px;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.mainReviews .block-reviews .review-title .text .date {
+    font-size: 16px;
+    opacity: 50%;
+    margin: 0;
+}
+
+.mainReviews .block-reviews .text-reviews p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.mainReviews .swiper-reviews .swiper-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.mainReviews .swiper-reviews .swiper-btn .btn-swiper {
+    display: flex;
+    gap: 10px;
+}
+
+.mainReviews .swiper-reviews .swiper-btn .btn-swiper button {
+    border: none;
+    cursor: pointer;
+    background: none;
+    padding: 0;
+}
+
+@media screen and (max-width: 700px) {
+    .mainReviews {
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .mainReviews .text-mainReviews {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-right: 0;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+
+    .mainReviews .swiper-reviews .swiper {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .mainReviews .text-mainReviews h2 {
+        font-size: 28px;
+        padding: 0;
+        margin-bottom: 15px;
+        white-space: normal;
+    }
+
+    .mainReviews .text-mainReviews .links {
+        align-self: flex-start;
+    }
+
+    .mainReviews .swiper-reviews {
+        gap: 10px;
+    }
+
+    .mainReviews .swiper-reviews .swiper {
+        overflow: visible;
+        height: auto;
+    }
+
+    .mainReviews .swiper-reviews .swiper-wrapper {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        transform: none;
+    }
+
+    .mainReviews .swiper-reviews .swiper-slide {
+        padding-right: 10px;
+        margin-bottom: 10px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .mainReviews .block-reviews {
+        padding: 20px;
+    }
+
+    .mainReviews .block-reviews .review-title {
+        padding-bottom: 10px;
+    }
+
+    .mainReviews .block-reviews .review-title .text h3 {
+        font-size: 18px;
+    }
+
+    .mainReviews .block-reviews .review-title .text .date {
+        font-size: 14px;
+    }
+
+    .mainReviews .block-reviews .text-reviews p {
+        font-size: 14px;
+    }
+
+    .mainReviews .swiper-btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center !important;
+        padding: 0 !important;
+    }
+
+    .mainReviews .swiper-reviews .swiper-btn .btn-swiper {
+        display: none;
+    }
+
+    .mainReviews {
+        margin-bottom: 60px;
+    }
+}

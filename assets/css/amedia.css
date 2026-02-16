@@ -1,0 +1,48 @@
+@media(min-width: 1640px){
+    .mainBannerForm{
+        margin: 0 10%;
+        margin-top: -140px;
+        margin-bottom: 80px;
+    }
+    .mainBanner {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    header {
+        padding: 0 10%;
+        padding-top: 20px;
+    }
+
+    main {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    body {
+        zoom: 1;
+    }
+}
+
+@media(max-width: 1460px){
+    body {
+        zoom: 0.9;
+    }
+}
+
+@media(max-width: 1200px){
+    body {
+        zoom: 0.8;
+    }
+}
+
+@media(max-width: 900px){
+    body {
+        zoom: 0.7;
+    }
+}
+
+@media(max-width: 700px){
+    body {
+        zoom: 1;
+    }
+}

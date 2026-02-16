@@ -1,0 +1,115 @@
+.mainNewsCols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.mainNewsColMain,
+.mainNewsColSecond {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mainNewsColMainItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    overflow: hidden;
+    background: linear-gradient(84.57deg, #FFFFFF 50.24%, rgba(255, 255, 255, 0.5) 94.24%);
+    border-radius: 20px;
+}
+
+.mainNewsColMainItem .image {
+    position: relative;
+    overflow: hidden;
+    min-width: 300px;
+    height: 100%;
+}
+
+.mainNewsColMainItem .image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    height: 100%;
+    width: auto;
+}
+
+.mainNewsColMainItem .content {
+    padding: 25px;
+}
+
+.mainNewsColMainItem .content h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.mainNewsColMainItem .content p {
+    margin: 0;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.mainNewsColMainItem .content .mainNewsColMainItem_row, .mainNewsColSecondItem_row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.mainNewsColMainItem .content .mainNewsColMainItem_row .date,
+.mainNewsColSecondItem_row .date {
+    color: rgba(0, 100, 153, 0.7);
+}
+
+.mainNewsColMainItem .content .mainNewsColMainItem_row .newsLink, 
+.mainNewsColSecondItem_row .newsLink {
+    color: #006499;
+    text-decoration: underline;
+}
+
+.mainNewsColSecondItem {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: linear-gradient(210.29deg, #FFFFFF 2.13%, #D1E3E7 100%);
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.mainNewsColSecondItem h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.mainNewsColSecondItem p {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+@media(max-width: 1100px) {}
+
+@media(max-width: 700px) {
+    .mainNewsCols {
+        grid-template-columns: 1fr;
+    }
+
+    .mainNewsColMainItem {
+        flex-direction: column;
+    }
+
+    .mainNewsColMainItem .image {
+        min-height: 320px;
+    }
+}
+
+@media(max-width: 500px) {}

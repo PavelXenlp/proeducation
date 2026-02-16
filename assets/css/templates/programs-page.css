@@ -1,0 +1,187 @@
+.programsBlock {
+    margin-bottom: 120px;
+}
+
+.programsBlockList {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.programsBlockItemTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 30px;
+}
+
+.programsBlockItemTitle h2 {
+    margin: 0;
+    font-size: 36px;
+    color: #006499;
+}
+
+.programsBlockItem_programsTable {
+    padding: 50px;
+    border-radius: 30px;
+    background: #fff;
+}
+
+.programsBlockItem_programsTable.tableKey_even {
+    background: linear-gradient(210.29deg, #FFFFFF 2.13%, #D1E3E7 100%);
+}
+
+.programsBlockItem_programsTableHeader {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 100, 153, 0.3);
+}
+
+.programsBlockItem_programsTableHeader .col-1 {
+    width: 33%;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.programsBlockItem_programsTableHeader .col-2 {
+    width: 77%;
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.programsBlockItem_programsTableHeader .col-2 div {
+    width: 50%;
+}
+
+.programsBlockItem_programItem {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 100, 153, 0.3);
+}
+
+.programsBlockItem_programEduLevel {
+    width: 33%;
+}
+
+.programsBlockItem_programEduLevel h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.programsBlockItem_programEduLevel p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.programsBlockItem_direction {
+    width: 77%;
+}
+
+.programsBlockItem_directionItem {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 100, 153, 0.3);
+}
+
+.programsBlockItem_directionItem:last-child {
+    border-bottom: 0;
+}
+
+.programsBlockItem_directionItemTitle,
+.programsBlockItem_directionItemContent {
+    width: 50%;
+}
+
+.programsBlockItem_directionItemTitle {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.programsBlockItem_directionItemContent p {
+    margin: 0;
+}
+
+.programsBlockItem_directionItemContent {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media(max-width: 1100px) {}
+
+@media(max-width: 700px) {
+    .programsBlockItemTitle {
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .programsBlockItemTitle h2 {
+        font-size: 28px;
+    }
+
+    .programsBlockItem_programEduLevel h3 {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .programsBlockItem_directionItemTitle {
+        font-size: 16px;
+    }
+
+    .programsBlockItem_directionItemContent {
+        font-size: 14px;
+    }
+
+    .programsBlock .mainDirectionsSearchTabs {
+        margin-bottom: 60px;
+        position: sticky;
+        top: 80px;
+    }
+
+    .programsBlockItem_programsTable {
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    .programsBlockItem_programsTableHeader {
+        display: none;
+    }
+
+    .programsBlockItem_programItem {
+        flex-direction: column;
+    }
+
+    .programsBlockItem_directionItemTitle,
+    .programsBlockItem_directionItemContent,
+    .programsBlockItem_direction,
+    .programsBlockItem_programEduLevel {
+        width: 100%;
+    }
+
+    .programsBlockItem_programEduLevel {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .programsBlockItem_directionItem {
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 500px) {}
