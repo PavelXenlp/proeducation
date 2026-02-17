@@ -1,18 +1,18 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import "global.css?v=1.2";
-@import "templates/header.css?v=1.2";
+@import "global.css?v=1.2.2";
+@import "templates/header.css?v=1.2.2";
 
-@import "templates/mainBanner.css?v=1.2";
-@import "templates/mainDirectionsBlock.css?v=1.2";
-@import "templates/mainDocumentsBlock.css?v=1.2";
-@import "templates/mainAboutBlock.css?v=1.2";
-@import "templates/mainCertsBlock.css?v=1.2";
-@import "templates/mainPartnersBlock.css?v=1.2";
-@import "templates/faqBlock.css?v=1.2";
-@import "templates/mainReviews.css?v=1.2";
-@import "templates/mainNews.css?v=1.2";
-@import "templates/requestBlock.css?v=1.2";
-@import "templates/mainCompanies.css?v=1.2";
+@import "templates/mainBanner.css?v=1.2.2";
+@import "templates/mainDirectionsBlock.css?v=1.2.2";
+@import "templates/mainDocumentsBlock.css?v=1.2.2";
+@import "templates/mainAboutBlock.css?v=1.2.2";
+@import "templates/mainCertsBlock.css?v=1.2.2";
+@import "templates/mainPartnersBlock.css?v=1.2.2";
+@import "templates/faqBlock.css?v=1.2.2";
+@import "templates/mainReviews.css?v=1.2.2";
+@import "templates/mainNews.css?v=1.2.2";
+@import "templates/requestBlock.css?v=1.2.2";
+@import "templates/mainCompanies.css?v=1.2.2";
 
-@import "templates/footer.css?v=1.2";
+@import "templates/footer.css?v=1.2.2";

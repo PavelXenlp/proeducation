@@ -37,7 +37,7 @@ $header_menu = [
     ],
     [
         'name' => 'Блог',
-        'link' => '/clients/proeducation'
+        'link' => '/clients/proeducation/news/'
     ],
     [
         'name' => 'Отзывы',
@@ -59,16 +59,24 @@ $header_menu = [
             </a>
             <div class="header-rigth">
                 <div class="header-contacts">
-                    <a href="tel:8 (999) 364-99-21">8 (999) 364-99-21</a>
-                    <a href="mailto:pro-obrazovanie.priem@yandex.ru">pro-obrazovanie.priem@yandex.ru</a>
+                    <?php if ($phone = get_company_phone()): ?>
+                        <a href="tel:<?php echo esc_attr($phone); ?>"><?php echo esc_html($phone); ?></a>
+                    <?php endif; ?>
+                    <?php if ($email = get_company_email()): ?>
+                        <a href="mailto:<?php echo esc_attr($email); ?>"><?php echo esc_html($email); ?></a>
+                    <?php endif; ?>
                 </div>
                 <div class="header-socials">
-                    <a href="">
-                        <img src="/clients/proeducation/wp-content/themes/custom_theme/assets/img/tg-header.svg" alt="">
-                    </a>
-                    <a href="">
-                        <img src="/clients/proeducation/wp-content/themes/custom_theme/assets/img/vk-header.svg" alt="">
-                    </a>
+                    <?php if ($telegram = get_company_telegram()): ?>
+                        <a href="<?php echo esc_url($telegram); ?>">
+                            <img src="/clients/proeducation/wp-content/themes/custom_theme/assets/img/tg-header.svg" alt="">
+                        </a>
+                    <?php endif; ?>
+                    <?php if ($vk = get_company_vk()): ?>
+                        <a href="<?php echo esc_url($vk); ?>">
+                            <img src="/clients/proeducation/wp-content/themes/custom_theme/assets/img/vk-header.svg" alt="">
+                        </a>
+                    <?php endif; ?>
                 </div>
                 <div class="btnRequestHeader">Получить консультацию</div>
             </div>
@@ -100,16 +108,24 @@ $header_menu = [
             <?php endforeach; ?>
         </div>
         <div class="headerBurgerMenu_socials">
-            <a href="">
-                <img src="/clients/proeducation/wp-content/themes/custom_theme/assets/img/tg-header.svg" alt="">
-            </a>
-            <a href="">
-                <img src="/clients/proeducation/wp-content/themes/custom_theme/assets/img/vk-header.svg" alt="">
-            </a>
+            <?php if ($telegram = get_company_telegram()): ?>
+                <a href="<?php echo esc_url($telegram); ?>">
+                    <img src="/clients/proeducation/wp-content/themes/custom_theme/assets/img/tg-header.svg" alt="">
+                </a>
+            <?php endif; ?>
+            <?php if ($vk = get_company_vk()): ?>
+                <a href="<?php echo esc_url($vk); ?>">
+                    <img src="/clients/proeducation/wp-content/themes/custom_theme/assets/img/vk-header.svg" alt="">
+                </a>
+            <?php endif; ?>
         </div>
         <div class="headerBurgerMenu_contacts">
-            <a href="tel:8 (999) 364-99-21">8 (999) 364-99-21</a>
-            <a href="mailto:pro-obrazovanie.priem@yandex.ru">pro-obrazovanie.priem@yandex.ru</a>
+            <?php if ($phone = get_company_phone()): ?>
+                <a href="tel:<?php echo esc_attr($phone); ?>"><?php echo esc_html($phone); ?></a>
+            <?php endif; ?>
+            <?php if ($email = get_company_email()): ?>
+                <a href="mailto:<?php echo esc_attr($email); ?>"><?php echo esc_html($email); ?></a>
+            <?php endif; ?>
         </div>
         <div class="btnRequestHeader">Получить консультацию</div>
     </div>

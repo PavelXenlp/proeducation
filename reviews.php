@@ -18,7 +18,6 @@ $page_excerpt = get_the_excerpt($page_id);
 <div class="pageMargin"></div>
 
 <?php
-include __DIR__ . '/includes/programs-page/titleBlock.php';
 include __DIR__ . '/includes/reviews/allReviews.php';
 include __DIR__ . '/includes/requestBlock.php';
 ?>

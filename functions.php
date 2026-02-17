@@ -41,6 +41,14 @@ function mytheme_enqueue_styles()
             '1.0.0'
         );
     }
+    if (is_page_template('news.php')) {
+        wp_enqueue_style(
+            'news-page-style', // Измените handle, если нужно отдельно
+            get_template_directory_uri() . '/assets/css/templates/news-page.css?v=' . time(),
+            array(),
+            '1.0.0'
+        );
+    }
 }
 add_action('wp_enqueue_scripts', 'mytheme_enqueue_styles');
 

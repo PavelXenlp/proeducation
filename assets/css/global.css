@@ -436,10 +436,11 @@ main {
     background: #fff;
     border-radius: 20px;
     overflow: hidden;
+    height: fit-content;
 }
 
 .newsPageContainer .newsPageContent .newsPageContent_content {
-    padding: 20px 50px;
+    padding: 30px 50px;
 }
 
 .newsPageContainer .newsPageContent h1 {

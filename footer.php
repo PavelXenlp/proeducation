@@ -13,7 +13,7 @@
                             <li><a href="/clients/proeducation/bakalavriat">Бакалавриат</a></li>
                             <li><a href="/clients/proeducation/magistratura">Магистратура</a></li>
                             <li><a href="/clients/proeducation/kolledzh">Колледж</a></li>
-                            <li><a href="/clients/proeducation">Статьи</a></li>
+                            <li><a href="/clients/proeducation/news">Статьи</a></li>
                             <li><a href="/clients/proeducation/about-us/">О нас</a></li>
                             <li><a href="/clients/proeducation/reviews">Отзывы</a></li>
                             <li><a href="/clients/proeducation/contacts">Контакты</a></li>
@@ -25,42 +25,55 @@
                 <div class="footer-block-2">
 
                     <div class="block">
+                        <?php if ($address  = get_company_address()): ?>
                         <p class="text-1">
-                            г. Пермь,<br>
-                            ул. Сибирская 35д
+                            <?php echo esc_html($address); ?>
                         </p>
+                        <?php endif; ?>
+                        <?php if ($working_hours = get_company_working_hours()): ?>
                         <p class="text-1">
-                            Режим работы:<br>
-                            ПН-ПТ: 09:00-18:00<br>
-                            СБ,ВС: выходной
+                            <?php echo $working_hours; ?>
                         </p>
+                        <?php endif; ?>
                     </div>
 
                     <div class="block1">
-                        <p class="text2">ИНН: 5904387110</p>
-                        <p class="text2">ООО "Камгород старт"</p>
+                        <?php if($inn = get_company_inn()): ?>
+                        <p class="text2">ИНН: <?php echo esc_html($inn); ?></p>
+                        <?php endif; ?>
+                        <?php if($companyLegalName = get_company_legal_name()): ?>
+                        <p class="text2"><?php echo esc_html($companyLegalName); ?></p>
+                        <?php endif; ?>
                         <a href="#" class="link">Обработка персональных данных</a>
                         <a href="#" class="link">Политика конфиденциальности</a>
                     </div>
 
                     <div class="block2">
+                        <?php if ($phone = get_company_phone()): ?>
                         <div class="block">
                             <p class="text3">Телефон:</p>
-                            <h2>8 (999) 364-99-21</h2>
+                            <h2><a href="tel:<?php echo esc_attr($phone); ?>"><?php echo esc_html($phone); ?></a></h2>
                         </div>
+                        <?php endif; ?>
+                        <?php if ($email = get_company_email()): ?>
                         <div class="block">
                             <p class="text3">Email:</p>
-                            <h2>pro-obrazovanie.priem@yandex.ru</h2>
+                            <h2><a href="tel:<?php echo esc_attr($email); ?>"><?php echo esc_html($email); ?></a></h2>
                         </div>
+                        <?php endif; ?>
 
                     </div>
 
                     <div class="block3">
                         <div class="img-footer">
-                            <a href="#"><img src="/clients/proeducation/wp-content/themes/custom_theme/assets/img/tg-header.svg" alt=""></a>
-                            <a href="#"><img src="/clients/proeducation/wp-content/themes/custom_theme/assets/img/vk-header.svg" alt=""></a>
+                            <?php if ($telegram = get_company_telegram()): ?>
+                                <a href="<?php echo esc_url($telegram); ?>"><img src="/clients/proeducation/wp-content/themes/custom_theme/assets/img/tg-header.svg" alt=""></a>
+                            <?php endif; ?>
+                            <?php if ($vk = get_company_vk()): ?>
+                                <a href="<?php echo esc_url($vk); ?>"><img src="/clients/proeducation/wp-content/themes/custom_theme/assets/img/vk-header.svg" alt=""></a>
+                            <?php endif; ?>
                         </div>
-                        <p class="text4">@2026 PRO-образование</p>
+                        <p class="text4">@<?php echo date('Y'); ?> <?php echo get_company_name(); ?></p>
                     </div>
 
                 </div>

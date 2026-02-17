@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Программы магистратуры
+ * Template Name: Новости
  *
  * @package CUSTOM THEME
  * @since 1.0.0
@@ -19,7 +19,6 @@ $page_excerpt = get_the_excerpt($page_id);
 
 <?php
 
-include __DIR__ . '/includes/programs-page/titleBlock.php';
 include __DIR__ . '/includes/news-page/newsList.php';
 include __DIR__ . '/includes/requestBlock.php';
 

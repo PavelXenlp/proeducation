@@ -29,9 +29,9 @@
         if ($news_query->have_posts()) {
             while ($news_query->have_posts()) {
                 $news_query->the_post();
-                if (has_post_thumbnail()) {
+                if (has_post_thumbnail() && count($with_image) < 2) {
                     $with_image[] = get_post();
-                } else {
+                } elseif (count($without_image) < 4) {
                     $without_image[] = get_post();
                 }
             }

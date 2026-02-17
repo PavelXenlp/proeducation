@@ -1,5 +1,16 @@
 <main>
     <div class="mainReviews">
+        <div class="text-mainReviews">
+            <h1><?php echo $page_title; ?></h1>
+            <div class="links">
+                <?php if ($twoGis = get_company_2gis()): ?>
+                    <a href="<?php echo esc_attr($twoGis); ?>" target="_blank" class="linrs-mainReviews"><img src="/clients/proeducation/wp-content/themes/custom_theme/assets/img/2gis_icon.png"></a>
+                <?php endif; ?>
+                <?php if ($yaMap = get_company_yaMap()): ?>
+                    <a href="<?php echo esc_attr($yaMap); ?>" target="_blank" class="linrs-mainReviews"><img src="/clients/proeducation/wp-content/themes/custom_theme/assets/img/ya_maps_icon.png"></a>
+                <?php endif; ?>
+            </div>
+        </div>
         <?php
         $reviews = get_posts(array(
             'post_type' => 'reviews',

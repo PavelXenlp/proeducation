@@ -11,7 +11,8 @@
     margin-right: 50px;
 }
 
-.mainReviews .text-mainReviews h2 {
+.mainReviews .text-mainReviews h2, 
+.mainReviews .text-mainReviews h1 {
     font-size: 48px;
     font-weight: 600;
     margin: 0;
@@ -125,7 +126,8 @@
         margin-bottom: 10px;
     }
 
-    .mainReviews .text-mainReviews h2 {
+    .mainReviews .text-mainReviews h2, 
+    .mainReviews .text-mainReviews h1 {
         font-size: 28px;
         padding: 0;
         margin-bottom: 15px;
